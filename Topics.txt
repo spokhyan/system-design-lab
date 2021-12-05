@@ -1,0 +1,89 @@
+Patterns
+  CQRS
+  
+  SAGA
+    POC
+    
+  SMART design Principles
+  Microservices Principles and Patterns
+    9 Prnciples
+    Drawback
+    DDD - Domain Dreiven Design
+    BC - 
+    MS
+    Independently deployed, loosly 
+    
+  12 Factors
+  
+  
+ Security
+  - Communication
+  - B2C, B2B A2A
+  - Oauth, Open ID
+  - RBAC 
+  - JWT
+    - Description : CBIS ( Provider will onboard it's APIs to CBIS), Consumer will request access to APIs on CBIS. Request will go to provider and provider will approve/decline the request
+                    Foe any resource access, consumer will request CBIS to generate a token,
+    - Why JWT - 
+    - API to API
+    - Mobile App to API
+    - Web App to API
+  
+Transaction Management 
+
+
+Exeption Handling 
+
+- Distributed RTracing
+
+
+Container
+ - container strategy 
+  - dockerize
+  - s2b
+  - k8
+  - deployment - g/b, canonical. rolling
+  
+  
+
+Networking
+
+
+Database
+  Relational vs NoSQL
+  Scenarios : which DB to use
+  TEQ
+
+Java 8/11
+ - Complertable Future 
+ - Stream
+
+
+
+Data Structure
+
+
+
+Dynamic Programming
+
+
+System Design Use Cases
+  - Twitter
+  - Online Parking System
+  - Car Rental Service Service 
+  
+Behaviour :
+ Leadership Principles
+
+
+
+Framework
+  - Spring WebFlux
+  - Spring JPA/Reactive
+  - Spring Security
+  
+
+
+
+  
+  
