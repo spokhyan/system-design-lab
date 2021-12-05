@@ -1,0 +1,23 @@
+How can I implement security to my web/mobile applications so that there won’t be any security breaches in my application ?
+
+PASSWORDS
+How to store passwords, validate them, encode, decode them using industry standard encryption algorithms ?
+
+USERS & ROLES
+How to maintain the user level security based on their roles and grants associated to them ?
+
+MULTIPLE LOGINS
+How can I implement a mechanism where the user will login only use and start using my application ?
+
+FINE GRAINED SECURITY
+How can I implement security at each level of my application using authorization rules ?
+
+
+CSRF & CORS
+What is CSRF attacks and CORS restrictions. How to overcome them?
+
+JWT & OAUTH2
+What is JWT and OAUTH2. How I can protect my web application using them?
+
+PREVENTING ATTACKS
+How to prevent security attacks like Brute force, stealing of data, session fixation
