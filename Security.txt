@@ -18,6 +18,12 @@ What is CSRF attacks and CORS restrictions. How to overcome them?
 
 JWT & OAUTH2
 What is JWT and OAUTH2. How I can protect my web application using them?
+OAUTH2:
+https://www.youtube.com/watch?v=3pZ3Nh8tgTE
+
+JWT:
+https://www.youtube.com/watch?v=soGRyl9ztjI
+https://www.youtube.com/watch?v=_XbXkVdoG_0
 
 PREVENTING ATTACKS
 How to prevent security attacks like Brute force, stealing of data, session fixation
