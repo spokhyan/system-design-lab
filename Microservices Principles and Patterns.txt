@@ -1,1 +1,8 @@
 Principles 
+https://searchapparchitecture.techtarget.com/tip/Follow-these-10-fundamental-microservices-design-principles
+
+Factors:
+https://dzone.com/articles/12-factor-app-principles-and-cloud-native-microser
+
+transaction management:
+https://walkingtreetech.medium.com/transaction-management-in-microservices-ab09b0cb803b
