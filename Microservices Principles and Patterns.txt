@@ -4,5 +4,42 @@ https://searchapparchitecture.techtarget.com/tip/Follow-these-10-fundamental-mic
 Factors:
 https://dzone.com/articles/12-factor-app-principles-and-cloud-native-microser
 
+#Patterns grouped by concerns 
+https://microservices.io/patterns/microservices.html 
+
 transaction management:
 https://walkingtreetech.medium.com/transaction-management-in-microservices-ab09b0cb803b
+
+Deployment
+  1. Single Service per Host
+  2. Multiple Services per Host 
+  3. Service instance per VM
+  4. Service instance per Container
+  5. Serverless deployment
+  6. Service deployment platform
+Decomposition patterns
+  1. Decompose by business capability
+  2. Decompose by subdomain
+
+Refactoring to microservicesnew
+  1. Strangler Application
+  2. Anti-corruption layer
+
+Data management
+  1. Database per Service
+  2. Shared database
+  3. Saga
+  4. API Composition
+  5. CQRS
+  6. Domain event
+  7. Event sourcing
+  
+Transactional messaging
+  1. Transactional outbox
+  2. Transaction log tailing
+  3. Polling publisher
+  
+Cross cutting concerns
+  1. Microservice chassis
+  2. Service Template
+  3. Externalized configuration
