@@ -1,0 +1,37 @@
+Container Runtime Interface (CRI) spec was introduced in K8s 1.5. CRI also consists of protocol buffers, gRPC API and libraries. 
+This brought the abstraction layer, and acted as an adapter, with the help of gRPC client running in kubelet and gRPC server running in CRI Shim. 
+This allowed a simpler way to run the various container runtimes.
+
+Container runtime used to manage. downloading the images, unpacking them, running them, and also handle the networking, storage.
+
+Stage 2: CRI-O & OCI
+
+OCI (Open Container Initiative), came up with a clear container runtime & image specification, which helped multi-platform support (Linux, Windows, VMs etc). 
+Runc is the default implementation of OCI, and that is the low level, of container runtime.
+
+he modern container runtimes are built on this layered architecture, where Kubelets talk to Container Runtimes through CRI-gRPC and the Container 
+Runtimes run the containers through OCI.
+
+There are various implementations of CRI such as Dockershim, CRI-O, containerD.
+podman: deamonless container engine, for developing, managing and running OCI containers, and speaks exact docker CLI language, to the extent where u can just Alias it
+
+skopeo: a complete container management CLI tool. One of the best features I love about skopeo, is the ability to inspect the images, 
+on the remote registry, without downloading or unpacking!!!…and it matured into a full-fledged image management tool for remote registries, 
+including signing images, copying between registries & keeping remote registries in sync. This significantly increases the pace of container build, 
+manage and deploy pipelines…
+
+buildah: a tool that helps build the OCI images, incrementally!!!..yes incrementally…I was playing around this the other day. 
+I don’t have to imagine the image composition, and write a complex Dockerfile..instead, I just build the image one layer at a time, test it, rollback (if required), 
+and once I am satisfied, I can commit it to the registry…how cool is that!!!
+
+cri-o: light-weight container runtime for k8s…will write more about this in the next section.
+
+OpenShift: End to end container platform
+
+Above notes from blog - https://faun.pub/evolution-of-k8sworker-nodes-cri-o-ea58762e7629 
+
+References
+https://www.projectatomic.io/blog/2017/06/6-reasons-why-cri-o-is-the-best-runtime-for-kubernetes/ 
+https://www.redhat.com/en/blog/red-hat-openshift-container-platform-4-now-defaults-cri-o-underlying-container-engine# 
+https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/ 
+https://www.redhat.com/en/blog/red-hat-openshift-container-platform-4-now-defaults-cri-o-underlying-container-engine
